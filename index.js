@@ -22,11 +22,11 @@ const part1 = "java";
 const part2 = "script";
 
 //convertimos las dos partes en cameLtaiL
-const part1CT = part1[part1.length -1].toUpperCase()
-const part2CT = part2[part2.length -1].toUpperCase()
+const part1CT = part1.slice(0,part1.length-1) + part1[part1.length -1].toUpperCase()
+const part2CT = part2.slice(0,part2.length-1) + part2[part2.length -1].toUpperCase()
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
-const result = `${part1}${part1CT}${part2}${part2CT}`
+const result = `${part1CT}${part2CT}`
 
 // Print the cameLtaiL-formatted string
 console.log(result)
@@ -78,4 +78,4 @@ const expression5 = !a || !b; //true
 const expression6 = !(a || b); //false
 // console.log(expression6)
 const expression7 = a && a; //true
-console.log(expression7)
+// console.log(expression7)
